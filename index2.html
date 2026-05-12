@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade</title>
+    <title>Dados de Países</title>
     <link rel="stylesheet" href="style2.css">
     <script src="script2.js"></script>
 </head>
 <body>
-    <h1>Clima</h1>
+    <h1>Pesquisar País</h1>
     <div class="container">
 
-    <label for="cidade">Cidade</label>
-    <input id="" type="text" >
-    <label for=""></label>
-    <input id="">
+        <input type="text" id="pais" placeholder="Digite País"> 
+        <button onclick="buscarPais()">Buscar</button>
+
+        <h2 id="nome"></h2>
+        <img id="bandeira" width="200"> 
+        <p id="capital"></p>
+        <p id="populacao"></p>
+
     </div>
 </body>
 </html>

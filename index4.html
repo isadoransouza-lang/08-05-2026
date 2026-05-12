@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade</title>
+    <title>Previsão do Tempo</title>
     <link rel="stylesheet" href="style4.css">
     <script src="script4.js"></script>
 
 </head>
 <body>
-     <h1>Paises</h1>
+     <h1>Consultar Clima</h1>
      <div class="container">
 
-    <label for="">Imagem</label>
-    <input id=" messagem" type="" >
-    <label for="status"></label>
-    <input id="status">
+        <input type="text" id="cidade" placeholder="Digite a Cidade">
+        <button onclick="buscarClima()">Buscar</button>
+
+        <h2 id="nomeCidade"></h2>
+
+        <img id="icone" width="100">
+
+        <p id="descricao"></p>
+        <p id="temperatura"></p>
+        <p id="sensacao"></p>
+        <p id="tempMin"></p>
+        <p id="tempMax"></p>
+        <p id="umidade"></p>
+
+
+   
     </div>
 </body>
 </html>
