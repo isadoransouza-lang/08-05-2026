@@ -2,15 +2,15 @@ async function exibirValores()
 {
     try {
     
-    const response = await fetch('https://economia.awesomeapi.com.br/json/last/USD-BRL');
+    const response = await fetch('https://dog.ceo/api/breeds/image/random ');
     if(!response.ok){
         throw new Error("Não é possivel carregar o arquivo json");
     }
     const dados = await response.json();
-    const nome = document.getElementById(`name`);
-    const idade = document.getElementById(`high`);
-    nome.innerHTML = dados.name;
-    idade.innerHTML = dados.high;
+    const messagem = document.getElementById(`messagem`);
+    const status = document.getElementById(`status`);
+    messagem.innerHTML = dados.message;
+    status.innerHTML = dados.status;
     console.log(dados);
     }
     catch(error){
